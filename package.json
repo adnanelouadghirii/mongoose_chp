@@ -1,0 +1,28 @@
+{
+  "name": "api-rest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "express-rate-limit": "^6.6.0",
+    "express-session": "^1.17.3",
+    "helmet": "^6.0.0",
+    "joi": "^17.7.0",
+    "mongoose": "^6.7.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20",
+    "req-flash": "^0.0.3"
+  }
+}

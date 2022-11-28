@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Marvel Studios</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/stylesheet.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+body{margin:0;font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}
+section{display:block;margin-top:16px!important;margin-bottom:16px!important}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+b{font-weight:bolder}
+hr{box-sizing:content-box;height:0;overflow:visible;border:0;border-top:1px solid #eee;margin:20px 0}
+button,input{font:inherit;margin:0}
+button,input{overflow:visible}
+html{overflow-x:hidden}
+h2{font-size:30px;font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}
+.wide{letter-spacing:4px}
+.button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap;white-space:normal}
+.input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.bar{width:100%;overflow:hidden}.center .bar{display:inline-block;width:auto}
+.bar .bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.bar{white-space:normal}
+.bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0;text-align:center}
+.bar-item-profile{width:auto;display:block;padding:8px 16px;text-align:right;border:none;white-space:normal;float:right;outline:0;text-align:right}
+.bar:before,.bar:after{content:"";display:table;clear:both}
+.col,.half{float:left;width:100%}
+.content{margin-left:auto;margin-right:auto;max-width:980px}
+
+.top{position:fixed;width:100%;z-index:1;top:0}
+.display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.display-container:hover{display:block}.display-container:hover {display:inline-block}
+.row-padding>.half>.col{padding:0 8px}
+.container{padding:0.01em 16px}
+.card{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.opacity{opacity:0.60}
+.large{font-size:18px!important}
+.center{text-align:center!important}
+.border{border:1px solid #ccc!important}
+.margin-bottom{margin-bottom:16px!important}
+.padding-large{padding:12px 24px!important}
+.right{float:right!important}
+.button:hover{color:#000!important;background-color:#ccc!important}
+.centered {position: absolute;top: 20%;left: 50%;transform: translate(-50%, -50%); font-weight: bold; text-align: center; color: #eee; font-size: 20px;
+}
+.centered_title {position: absolute;top: 10%;left: 50%;transform: translate(-50%, -50%); font-weight: bolder; color: #c0c0c0; font-size:50px;}
+.black{color:#fff!important;background-color:#000!important}
+.header {
+  position: relative;
+}
+.pb-8 {
+  padding-bottom: 8rem !important;
+}
+.pt-5 {
+  padding-top: 3rem !important;
+}
+.pt-lg-8 {
+    padding-top: 8rem !important;
+  }
+.d-flex {
+  display: flex !important;
+}
+.align-items-center {
+  align-items: left !important;
+}
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all .15s ease;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .mask {
+    transition: none;
+  }
+}
+.bg-gradient-default {
+  background: linear-gradient(87deg, #172b4d 0, #1a174d 100%) !important;
+}
+
+.bg-gradient-default {
+  background: linear-gradient(87deg, #172b4d 0, #1a174d 100%) !important;
+}
+.opacity-8 {
+  opacity: .8 !important;
+}
+
+.opacity-8 {
+  opacity: .9 !important;
+}
+.container-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.row {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+  flex-wrap: wrap;
+}
+.display-2 span {
+  font-weight: 300;
+  display: block;
+}
+.display-2 {
+  font-size: 2.75rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.text-white {
+  color: #fff !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+a.text-white:hover,
+a.text-white:focus {color: #e6e6e6 !important;}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
+.main-content {
+  position: relative;
+}
+
+.main-content .navbar-top {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .main-content .container-fluid {
+    padding-right: 39px !important;
+    padding-left: 39px !important;
+  }
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+a.text-white:hover,
+a.text-white:focus {
+  color: #e6e6e6 !important;
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+</style>
+<body>
+
+    <!-- Navbar -->
+    <div class="top">
+    <div class="bar black card">
+        <a href="/home" class="bar-item button padding-large">HOME</a>
+        <a href="/logout" class="bar-item-profile button padding-large hide-small">LOG OUT</a>
+        <a href="/profile" class="bar-item-profile button padding-large hide-small">PROFILE</a>
+        <a href= "/profile" class="bar-item-profile button padding-large hide-small"><%= username %></a>
+        
+    </div>
+    </div>
+
+    <div class="main-content" style="max-width:2000px;margin-top:46px">
+
+        <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 600px; background-image: url(https://images.hdqwalls.com/download/stan-lee-infinity-gauntlet-0i-1366x768.jpg); background-size: cover; background-position: center top;">
+            <!-- Mask -->
+            <!-- Header container -->
+            <div class="container-fluid d-flex align-items-center">
+              <div class="row">
+                <div>
+                  <h1 class="display-2 text-white">Hello <%= username %></h1>
+                  <p class="text-white mt-0 mb-5">This is your profile page.</p>
+                  <button onclick="location.href='/delete'" class="glow-on-hover" type="button">Remove your Account</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+    </div>
+
+    <!-- Image of location/map -->
+    <img src="https://trumpwallpapers.com/wp-content/uploads/Marvel-Wallpaper-04-3840-x-2160.jpg" class="image greyscale-min" style="width:100%">
+    </body>
+</html>
+

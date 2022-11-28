@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Marvel Studios</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/stylesheet.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+body{margin:0;font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}
+section{display:block;margin-top:16px!important;margin-bottom:16px!important}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+b{font-weight:bolder}
+hr{box-sizing:content-box;height:0;overflow:visible;border:0;border-top:1px solid #eee;margin:20px 0}
+button,input{font:inherit;margin:0}
+button,input{overflow:visible}
+html{overflow-x:hidden}
+h2{font-size:30px;font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}
+.wide{letter-spacing:4px}
+.button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap;white-space:normal}
+.input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.bar{width:100%;overflow:hidden}.center .bar{display:inline-block;width:auto}
+.bar .bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.bar{white-space:normal}
+.bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0;text-align:center}
+.bar-item-profile{width:auto;display:block;padding:8px 16px;text-align:right;border:none;white-space:normal;float:right;outline:0;text-align:right}
+.bar:before,.bar:after{content:"";display:table;clear:both}
+.col,.half{float:left;width:100%}
+.content{margin-left:auto;margin-right:auto;max-width:980px}
+
+.top{position:fixed;width:100%;z-index:1;top:0}
+.display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.display-container:hover{display:block}.display-container:hover {display:inline-block}
+.row-padding>.half>.col{padding:0 8px}
+.container{padding:0.01em 16px}
+.card{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.opacity{opacity:0.60}
+.large{font-size:18px!important}
+.center{text-align:center!important}
+.border{border:1px solid #ccc!important}
+.margin-bottom{margin-bottom:16px!important}
+.padding-large{padding:12px 24px!important}
+.right{float:right!important}
+.button:hover{color:#000!important;background-color:#ccc!important}
+.centered {position: absolute;top: 20%;left: 50%;transform: translate(-50%, -50%); font-weight: bold; text-align: center; color: #eee; font-size: 20px;
+}
+.centered_title {position: absolute;top: 10%;left: 50%;transform: translate(-50%, -50%); font-weight: bolder; color: #c0c0c0; font-size:50px;}
+.black{color:#fff!important;background-color:#000!important}
+</style>
+<body>
+
+    <!-- Navbar -->
+    <div class="top">
+    <div class="bar black card">
+        <a href="/home" class="bar-item button padding-large">HOME</a>
+        <a href="/logout" class="bar-item-profile button padding-large hide-small">LOG OUT</a>
+        <a href="/profile" class="bar-item-profile button padding-large hide-small">Profile</a>
+        <a href= "/profile" class="bar-item-profile button padding-large hide-small"><%= username %></a>
+    </div>
+    </div>
+
+
+    <!-- Page content -->
+    <div class="content" style="max-width:2000px;margin-top:46px">
+
+        
+
+    <!-- Automatic Slideshow Images -->
+    <div class="mySlides display-container center">
+        <img src="https://wallpapercave.com/wp/wp5317487.jpg" style="width:100%">
+        <div class="display-bottommiddle container text-white hide-small">
+        </div>
+    </div>
+    <div class="mySlides display-container center">
+        <img src="https://wallpapercave.com/wp/wp4360657.jpg" style="width:100%">
+        <div class="display-bottommiddle container text-white hide-small">
+        </div>
+    </div>
+    <div class="mySlides display-container center">
+        <img src="https://wallpapercave.com/wp/wp8973950.jpg" style="width:100%">
+        <div class="display-bottommiddle container text-white hide-small">
+        </div>
+    </div>
+
+
+
+    <script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+    }
+
+
+    </script>
+
+    </body>
+</html>
